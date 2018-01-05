@@ -3,12 +3,12 @@
       <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
           <div class="form-group">
 
-              <label for="title">Quote</label>
-              <input type="text" required class="form-control" id="title" name="title" [(ngModel)]="newQuote.title" name="title" #name="ngModel" required>
-          <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
-              <p> Quote is required</p>
+              <label for="name">Quote</label>
+              <input type="text" required class="form-control" id="name" name="quote" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+          <!-- <div [hidden]="title.valid || title.pristine" class="alert alert-danger"> -->
+              <!-- <p> Quote is required</p>
               
-          </div>
+          </div> -->
 
           </div>
           <div class="form-group">
