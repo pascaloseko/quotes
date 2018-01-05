@@ -3,7 +3,7 @@
 <hr>
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
   <p style="padding:20px">{{quote.title}}</p>
-  <p>complete in {{quote | dateCount}} days</p>
+  <p>created {{quote | dateCount}} days ago</p>
   <!-- <p>{{quote.rating}}</p> -->
   <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
   <button class="btn btn-edit" (click)='downvote(i)'>thumbs-down</button>
