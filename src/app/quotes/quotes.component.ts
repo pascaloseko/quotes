@@ -10,7 +10,7 @@ export class QuotesComponent implements OnInit {
 
   @Input() quote:Quotes;
   @Output() isComplete= new EventEmitter<boolean>();
-
+   vote:number = 0
   quotes = [
     new Quotes(1,"What you do makes a difference, and you have to decide what kind of difference you want to make","+1",new Date(2018,3,14)),
     new Quotes(2,"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small","+2",new Date(2018,6,9)),
@@ -20,7 +20,7 @@ export class QuotesComponent implements OnInit {
   ]
 
 upvote(index){
-
+   alert("blah")
 }
 
 deleteQuote(isComplete,index){

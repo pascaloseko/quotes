@@ -1,6 +1,9 @@
 <div class="container">
 <h1>Quotes</h1>
 <hr>
+<div class="row">
+  <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
+</div>
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
   <p style="padding:20px">{{quote.title}}</p>
   <p>Created {{quote.completeDate|dateCount}} days ago</p>
