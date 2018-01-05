@@ -3,13 +3,16 @@
 <hr>
 <div class="row">
   <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
-</div>
+</div><br>
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-  <p style="padding:20px">{{quote.name}}</p>
+  <div class="container-fluid">
+  <strong><p>Quote {{quote.id}}</p></strong>
+  <p style="padding:10px">{{quote.name}}</p>
   <p>Created {{quote.completeDate|dateCount}} days ago</p>
   <!-- <p>{{quote.rating}}</p> -->
   <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
   <button class="btn btn-edit" (click)='downvote(i)'>thumbs-down</button>
-  <button class="btn btn-danger" (click)='deleteQuote($event,i)'>delete</button>
+  <button class="btn btn-danger" (click)='deleteQuote($event,i)'>delete</button><br>
+</div>
 </div>
 </div>
