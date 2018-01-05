@@ -5,7 +5,7 @@
   <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
 </div>
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-  <p style="padding:20px">{{quote.title}}</p>
+  <p style="padding:20px">{{quote.name}}</p>
   <p>Created {{quote.completeDate|dateCount}} days ago</p>
   <!-- <p>{{quote.rating}}</p> -->
   <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
