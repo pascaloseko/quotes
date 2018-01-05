@@ -2,7 +2,8 @@
 <hr>
 <ul *ngFor="let quote of quotes;let i = 'index'">
   <li>{{quote.title}}</li>
-  <p>{{quote.rating}}</p>
+  <!-- <p>{{quote.rating}}</p> -->
   <button (click)='upvote(i)'>thumbs-up</button>
   <button (click)='downvote(i)'>thumbs-down</button>
+  <button (click)='deleteQuote($event,i)'>delete</button>
 </ul>
