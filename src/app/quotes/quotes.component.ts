@@ -12,11 +12,11 @@ export class QuotesComponent implements OnInit {
   @Output() isComplete= new EventEmitter<boolean>();
 
   quotes = [
-    new Quotes(1,"What you do makes a difference, and you have to decide what kind of difference you want to make","+1"),
-    new Quotes(2,"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small","+2"),
-    new Quotes(3,"It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going","+3"),
-    new Quotes(4,"You Can Develop Any Habit Or Thought Or Behavior That You Consider Desirable Or Necessary","+1"),
-    new Quotes(4,"We Become What We Think About","+2"),
+    new Quotes(1,"What you do makes a difference, and you have to decide what kind of difference you want to make","+1",new Date(2018,3,14)),
+    new Quotes(2,"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small","+2",new Date(2018,6,9)),
+    new Quotes(3,"It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going","+3",new Date(2018,1,12)),
+    new Quotes(4,"You Can Develop Any Habit Or Thought Or Behavior That You Consider Desirable Or Necessary","+1",new Date(2018,0,18)),
+    new Quotes(4,"We Become What We Think About","+2",new Date(2018,2,14)),
   ]
 
 upvote(index){
