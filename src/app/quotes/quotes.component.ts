@@ -19,9 +19,9 @@ export class QuotesComponent implements OnInit {
     new Quotes(4,"We Become What We Think About","+2"),
   ]
 
-// upvote(index){
+upvote(index){
 
-// }
+}
 
 deleteQuote(isComplete,index){
   if(isComplete){
