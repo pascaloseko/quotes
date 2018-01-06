@@ -16,7 +16,7 @@ It's an app that was created through the angular cli. It consists of two compone
 * then created the custom `date` **Pipe** called _date-count_ using the command __ng generate pipe date-count__.
 
 ## Link to my git hub pages site
-[Quote App](https://github.com/cospamental/quotes)
+[Quote App]( https://cospamental.github.io/quotes/)
 
 ## Code scaffolding
 
