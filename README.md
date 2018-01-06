@@ -2,9 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
-## Development server
+## Author
+`Pascal Oseko`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## About Quotes App
+
+It's an app that was created through the angular cli. It consists of two components that is __quotes component__ and the __quote form component__ the two components communicate with each other when adding a new quote into the page. The app also has a date pipe that calculates the number of days when the `quote` was created.
+
+## Project set up instructions
+
+* I ran __ng new Quote__ to start up the project.
+* then created two components _quote component_ and _quote form component_ using __ng generate component quote__ and __ng generate component quote-form__.
+* then created the custom `date` **Pipe** called _date-count_ using the command __ng generate pipe date-count__.
+
+## Link to my git hub pages site
+[Quote App](https://github.com/cospamental/quotes)
 
 ## Code scaffolding
 
