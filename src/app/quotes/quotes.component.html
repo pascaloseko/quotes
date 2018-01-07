@@ -6,13 +6,15 @@
 </div><br>
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
   <div class="container-fluid">
-  <strong><p>Quote {{quote.id}}</p></strong>
-  <p style="padding:10px">{{quote.name}}</p>
-  <p>Created {{quote.completeDate|dateCount}} days ago</p>
-  <!-- <p>{{quote.rating}}</p> -->
-  <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
-  <button class="btn btn-edit" (click)='downvote(i)'>thumbs-down</button>
-  <button class="btn btn-danger" (click)='deleteQuote($event,i)'>delete</button><br>
+  <div class="well">
+    <strong><p>Quote {{quote.id}}</p></strong>
+    <p style="padding:10px">{{quote.name}}</p>
+    <p>Created {{quote.completeDate|dateCount}} days ago</p>
+    <!-- <p>{{quote.rating}}</p> -->
+    <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
+    <button class="btn btn-edit" (click)='downvote(i)'>thumbs-down</button>
+    <button class="btn btn-danger" (click)='deleteQuote($event,i)'>delete</button><br>
+  </div>
 </div>
 </div>
 </div>
