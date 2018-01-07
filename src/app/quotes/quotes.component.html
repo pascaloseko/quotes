@@ -11,8 +11,8 @@
     <p style="padding:10px">{{quote.name}}</p>
     <p>Created {{quote.completeDate|dateCount}} days ago</p>
     <!-- <p>{{quote.rating}}</p> -->
-    <button class="btn btn-primary" (click)='upvote(i)'>thumbs-up</button>
-    <button class="btn btn-edit" (click)='downvote(i)'>thumbs-down</button>
+    <button class="btn btn-primary" (click)='upvote(i)'><span class="badge">{{ vote }}</span> thumbs-up</button>
+    <button class="btn btn-edit" (click)='downvote(i)'><span class="badge">{{ dvote }}</span> thumbs-down</button>
     <button class="btn btn-danger" (click)='deleteQuote($event,i)'>delete</button><br>
   </div>
 </div>

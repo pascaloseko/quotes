@@ -10,7 +10,9 @@ export class QuotesComponent implements OnInit {
 
   @Input() quote:Quotes;
   @Output() isComplete= new EventEmitter<boolean>();
-   vote:number = 0
+  vote:number = 0
+  dvote:number = 0;
+
   quotes = [
     new Quotes(1,"What you do makes a difference, and you have to decide what kind of difference you want to make","+1",new Date(2018,3,14)),
     new Quotes(2,"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small","+2",new Date(2018,6,9)),
@@ -19,9 +21,13 @@ export class QuotesComponent implements OnInit {
     new Quotes(5,"We Become What We Think About","+2",new Date(2018,2,14)),
   ]
 
-upvote(index){
-   alert("blah")
+downvote(index){
+  this.dvote = this.dvote - 1;
 }
+upvote(index){
+  this.vote = this.vote + 1;
+}
+
 addNewQuote(quote){
   let quoteLength = this.quotes.length;
   quote.id=quoteLength+1;
