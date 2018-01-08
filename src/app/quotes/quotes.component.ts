@@ -6,12 +6,12 @@ import { Quotes } from '../quotes';
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css']
 })
+
 export class QuotesComponent implements OnInit {
 
   @Input() quote:Quotes;
   @Output() isComplete= new EventEmitter<boolean>();
-  vote:number = 0
-  dvote:number = 0;
+ 
 
   quotes = [
     new Quotes(1,"What you do makes a difference, and you have to decide what kind of difference you want to make","+1",new Date(2018,3,14)),
@@ -21,12 +21,6 @@ export class QuotesComponent implements OnInit {
     new Quotes(5,"We Become What We Think About","+2",new Date(2018,2,14)),
   ]
 
-downvote(index){
-  this.dvote = this.dvote - 1;
-}
-upvote(index){
-  this.vote = this.vote + 1;
-}
 
 addNewQuote(quote){
   let quoteLength = this.quotes.length;
